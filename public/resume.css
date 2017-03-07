@@ -69,6 +69,13 @@ html, body, .root, .root > .container {
     height: 100%;
 }
 
+@media only screen and (max-width: 1024px) {
+
+    body {
+        font-size: .78em;
+    }
+
+}
 .root {
     background: #eee;
 }
@@ -172,12 +179,18 @@ article > .container > h1 > .btnBack {
     font-weight: 900;
 }
 
+article > .container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
 article > .container > .inner > * {
     display: none;
     position: relative;
 }
 
 article.profile {
+    transform: scaleX(0);
     display: flex;
     align-items: center;
     transform-origin: left;
@@ -194,12 +207,6 @@ article.profile {
 article.profile > .container > h1 > .btnBack {
     background: #bd3c75;
     color: #ff77ae;
-}
-
-article.profile > .container {
-    width: 100%;
-    margin: 0 10em;
-    text-align: center;
 }
 
 article.profile .baseInfo {
@@ -264,6 +271,7 @@ article.profile .dragTarget ul li {
 }
 
 article.experience {
+    transform: scaleX(0);
     display: flex;
     align-items: center;
     transform-origin: center;
@@ -280,12 +288,6 @@ article.experience {
 article.experience > .container > h1 > .btnBack {
     background: #3989c7;
     color: #5db8ff;
-}
-
-article.experience > .container {
-    width: 100%;
-    margin: 0 10em;
-    text-align: center;
 }
 
 article.experience table {
@@ -371,6 +373,7 @@ article.experience table ul li:before {
 }
 
 article.contact {
+    transform: scaleX(0);
     display: flex;
     align-items: center;
     transform-origin: right;
@@ -387,12 +390,6 @@ article.contact {
 article.contact > .container > h1 > .btnBack {
     background: #9ac561;
     color: #b4f95a;
-}
-
-article.contact > .container {
-    width: 100%;
-    margin: 0 10em;
-    text-align: center;
 }
 
 article.contact .email {
