@@ -1,0 +1,409 @@
+/*@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a:link, a:hover, a:active, a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+body, td {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+html, body, .root, .root > .container {
+    width: 100%;
+    height: 100%;
+}
+
+.root {
+    background: #eee;
+}
+
+.allContainer {
+    position: relative;
+}
+
+h1.logo {
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 100000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.3em;
+    background: #333;
+    color: #999;
+    font-size: 1em;
+}
+
+h1.logo span {
+    font-size: .6em;
+    color: #ccc;
+}
+
+.intro {
+    height: 100%;
+}
+
+.gnb {
+    height: 100%;
+}
+
+.gnb > ul {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+}
+
+.gnb > ul > li {
+    transform: scaleX(0);
+    cursor: pointer;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    transform-origin: left;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.gnb > ul > li:nth-child(1) {
+    background: #ff2388;
+}
+
+.gnb > ul > li:nth-child(2) {
+    background: #2596d5;
+}
+
+.gnb > ul > li:nth-child(3) {
+    background: #abe165;
+}
+
+.gnb > ul > li > span {
+}
+
+.gnb > ul > li > a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+}
+
+.gnb > ul > li > a span {
+    margin-left: .5em;
+}
+
+article > .container > h1 {
+    /*margin: 2em auto .5em;*/
+    position: relative;
+    color: #FFF;
+    font-size: 2em;
+}
+
+article > .container > h1 > .btnBack {
+    display: inline-block;
+    display: none;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: .2em;
+    width: 1.6em;
+    height: 1.6em;
+    padding-top: .2em;
+    border-radius: .8em;
+    font-size: .6em;
+    font-weight: 900;
+}
+
+article > .container > .inner > * {
+    display: none;
+    position: relative;
+}
+
+article.profile {
+    display: flex;
+    align-items: center;
+    transform-origin: left;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff2388;
+    color: #fff;
+}
+
+article.profile > .container > h1 > .btnBack {
+    background: #bd3c75;
+    color: #ff77ae;
+}
+
+article.profile > .container {
+    width: 100%;
+    margin: 0 10em;
+    text-align: center;
+}
+
+article.profile .baseInfo {
+    margin-top: .5em;
+    color: #FF95C4;
+    font-size: .8em;
+}
+
+article.profile .dragSource {
+    min-width: 26em;
+    margin: 1.5em auto 2em;
+    text-align: center;
+}
+
+article.profile .dragSource > div {
+    display: inline-block;
+    vertical-align: middle;
+    align-items: center;
+    border: solid .5em #ff6fb2;
+    width: 6em;
+    height: 3em;
+    padding: .5em;
+    font-weight: bold;
+    margin: .2em .2em;
+}
+
+article.profile .dragSource > div.designer {
+    color: #fffdae;
+}
+
+article.profile .dragSource > div.flasher {
+    color: #9cc3ff;
+}
+
+article.profile .dragSource > div.frontendDeveloper {
+    color: #bbb;
+}
+
+article.profile .dragSource > div > span {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+article.profile .dragSource > div.frontendDeveloper > span {
+    margin-top: .5em;
+}
+
+article.profile .dragTarget {
+    width: 20.8em;
+    min-height: 10em;
+    margin: 2em auto 1em;
+    padding: 2em;
+    background: #ca227c;
+}
+
+article.profile .dragTarget ul {
+    width: 100%;
+}
+
+article.profile .dragTarget ul li {
+    margin-top: .2em;
+}
+
+article.experience {
+    display: flex;
+    align-items: center;
+    transform-origin: center;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2596d5;
+    color: #fff;
+}
+
+article.experience > .container > h1 > .btnBack {
+    background: #3989c7;
+    color: #5db8ff;
+}
+
+article.experience > .container {
+    width: 100%;
+    margin: 0 10em;
+    text-align: center;
+}
+
+article.experience table {
+    table-layout: fixed;
+    position: relative;
+    width: 22em;
+    margin: .5em auto;
+    text-align: left;
+}
+
+article.experience table:first-child {
+    margin-top: 1em;
+}
+
+article.experience table th {
+    padding: .3em;
+    font-size: .9em;
+}
+
+article.experience table th > span {
+    font-size: .8em;
+}
+
+article.experience table td {
+    padding: .3em .5em;
+}
+
+article.experience table th {
+    background: #1d6e9f;
+}
+
+article.experience table td {
+    background: #1d88c0;
+    font-size: .8em;
+}
+
+article.experience table .period,
+article.experience table .career {
+    padding-top: .5em;
+    color: #b8dfff;
+    font-weight: bold;
+}
+
+article.experience table .career {
+    text-align: right;
+}
+
+article.experience table .detail {
+    width: 30em;
+    padding-top: .5em;
+    padding-bottom: 1em;
+    font-size: .75em;
+}
+
+article.experience table .detail > .title {
+    display: block;
+    margin: .5em 0 .6em;
+    color: #b8dfff;
+    font-weight: bold;
+}
+
+article.experience table .detail > .title:first-child {
+    margin-top: 0;
+}
+
+article.experience table ul li {
+    position: relative;
+    margin-top: .3em;
+    padding-left: .8em;
+    line-height: 1.2em;
+}
+
+article.experience table ul li:first-child {
+    margin-top: 0;
+}
+
+article.experience table ul li:before {
+    content: '-';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #9bdaff;
+}
+
+article.contact {
+    display: flex;
+    align-items: center;
+    transform-origin: right;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #abe165;
+    color: #fff;
+}
+
+article.contact > .container > h1 > .btnBack {
+    background: #9ac561;
+    color: #b4f95a;
+}
+
+article.contact > .container {
+    width: 100%;
+    margin: 0 10em;
+    text-align: center;
+}
+
+article.contact .email {
+    width: 22em;
+    margin: 1em auto;
+    padding: .3em;
+    background: #96d248;
+}
+
+
+
+
+
+
