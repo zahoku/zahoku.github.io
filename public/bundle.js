@@ -13026,7 +13026,7 @@
                                 _react2.default.createElement(
                                     'span',
                                     null,
-                                    '- Tony Bang\'s Resume'
+                                    '- Tony\'s Resume'
                                 )
                             )
                         ),

@@ -126,7 +126,7 @@ class ResumeContainer extends Component {
     render() {
         return (
             <div className="container">
-                <h1 className="logo"><Link to="/">ZAHOKU <span>- Tony Bang's Resume</span></Link></h1>
+                <h1 className="logo"><Link to="/">ZAHOKU <span>- Tony's Resume</span></Link></h1>
                 <article className="intro">
                     <div className="gnb">
                         <ul>
