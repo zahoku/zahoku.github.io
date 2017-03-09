@@ -98,14 +98,14 @@ class Profile extends Component {
                             방정현, Front-end Developer, 서울 송파구 방이동, 1978년생
                         </p>
                         <div className="dragSource">
-                            <div className="designer">
-                                <span>Designer</span>
+                            <div className="frontendDeveloper">
+                                <span>Front-end<br/>Developer</span>
                             </div>
                             <div className="flasher">
                                 <span>Flasher</span>
                             </div>
-                            <div className="frontendDeveloper">
-                                <span>Front-end<br/>Developer</span>
+                            <div className="designer">
+                                <span>Designer</span>
                             </div>
                         </div>
 

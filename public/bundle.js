@@ -60,10 +60,7 @@
     /***/ function (module, exports, __webpack_require__) {
 
         __webpack_require__(1);
-        __webpack_require__(298);
-        (function webpackMissingModule() {
-            throw new Error("Cannot find module \"C:\\project\\zahoku.github.io\\build\"");
-        }());
+        module.exports = __webpack_require__(298);
 
 
         /***/
@@ -44193,11 +44190,13 @@
                                     {className: 'dragSource'},
                                     _react2.default.createElement(
                                         'div',
-                                        {className: 'designer'},
+                                        {className: 'frontendDeveloper'},
                                         _react2.default.createElement(
                                             'span',
                                             null,
-                                            'Designer'
+                                            'Front-end',
+                                            _react2.default.createElement('br', null),
+                                            'Developer'
                                         )
                                     ),
                                     _react2.default.createElement(
@@ -44211,13 +44210,11 @@
                                     ),
                                     _react2.default.createElement(
                                         'div',
-                                        {className: 'frontendDeveloper'},
+                                        {className: 'designer'},
                                         _react2.default.createElement(
                                             'span',
                                             null,
-                                            'Front-end',
-                                            _react2.default.createElement('br', null),
-                                            'Developer'
+                                            'Designer'
                                         )
                                     )
                                 ),
