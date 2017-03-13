@@ -111,7 +111,7 @@ class Experience extends Component {
                             </colgroup>
                             <thead>
                             <tr>
-                                <th colSpan="2">슈프리마<span> - Access Control 관련 사업체</span></th>
+                                <th colSpan="2">슈프리마<span> - 바이오 인식 기술 기업</span></th>
                             </tr>
                             </thead>
                             <tbody>
